@@ -1,0 +1,1 @@
+export default "https://svelte-server-ecommerce.herokuapp.com"

@@ -1,0 +1,192 @@
+:root {
+  --color-verde: #00C184;
+  --color-turqueza: #00D4A9;
+  --color-azul_cielo: #00BFC1;
+  --color-azul_marino: #1A3540;
+  --color-azul_fuerte: #121726;
+
+  --transition: all 0.3 ease-out
+}
+
+
+body {
+  /* background-color: var(--color-azul_marino); */
+  margin: 0;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.5em 0;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+code {
+  font-family: menlo, inconsolata, monospace;
+  font-size: calc(1em - 2px);
+  color: #555;
+  background-color: #f0f0f0;
+  padding: 0.2em 0.4em;
+  border-radius: 2px;
+}
+
+button:focus {
+  outline: none;
+}
+
+
+.k-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.k-grid {
+  max-width: var(--width-container);
+  margin: 0 auto;
+  padding: 0 20px;
+  transition: padding .5s ease;
+}
+
+.k-margin {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.k-padding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.btn {
+  font-family: inherit;
+  text-transform: uppercase;
+  color: black;
+  background-color: transparent;
+  padding: 15px 30px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 2px solid rgb(90, 152, 209);
+  border-radius: 30px;
+  transition: var(--transition);
+}
+
+.btn-sucessful {
+
+  font-family: inherit;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: var(--transition);
+  color: white;
+  background-color: rgb(69, 167, 69);
+}
+
+.btn-cancel {
+
+  font-family: inherit;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: var(--transition);
+  color: white;
+  background-color: rgb(199, 62, 43);
+}
+
+.btn:hover {
+  background-color: #2697d8;
+}
+
+.btn-calendar {
+  font-size: 1.4em;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  color: white;
+}
+
+.btn-calendar:hover {
+  color: rgb(255, 166, 0);
+}
+
+.btn-next {
+  background-color: rgb(61, 145, 61);
+  padding: 10px;
+  color: white;
+}
+
+.k-title {
+  font-size: 1.7em;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-title);
+}
+
+
+/* 
+---------------------------------------
+NAVBAR
+---------------------------------------
+*/
+.navbar {
+  background-color: var(--color-verde);
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.nav-section {
+  display: flex;
+}
+
+.fecha {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.logo {
+  margin: 0;
+}
+
+.btn-sidebar-toggle {
+  background-color: transparent;
+  border: none;
+  color: rgb(241, 241, 241);
+  font-size: 1.8em;
+}
