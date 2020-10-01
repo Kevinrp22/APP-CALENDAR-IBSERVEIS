@@ -6,17 +6,21 @@
   import Products from "./pages/Products.svelte";
   import Home from "./pages/Home.svelte";
   // router
-  import { Router, Route, Link } from "svelte-routing";
+  import { Router, Route, Link, navigate } from "svelte-routing";
   // components
   import Navbar from "./components/Navbar/Navbar.svelte";
   import Sidebar from "./components/Navbar/Sidebar.svelte";
 
+  import user from "./stores/user";
   import globalStore from "./stores/globalStore";
   import Alert from "./components/Alert.svelte";
   import { rangeCalendar } from "./stores/calendar";
 
   onMount(() => {
     rangeCalendar($globalStore.año, $globalStore.mes, $globalStore.diaHoy);
+    if (!user.jwt) {
+      navigate("/login");
+    }
   });
 </script>
 
